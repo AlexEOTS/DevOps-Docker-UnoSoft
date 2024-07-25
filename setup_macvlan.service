@@ -1,0 +1,10 @@
+[Unit]
+Description=Setup macvlan interface
+
+[Service]
+ExecStart=/home/usera/Test_case/setup_macvlan.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
